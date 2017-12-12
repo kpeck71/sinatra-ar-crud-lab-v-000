@@ -1,1 +1,4 @@
-<h3>Post.all</h2>
+<%@posts.each do |post|%>
+  <p>Title:<%=post.title%></p>
+  <p><%=post.content%></p>
+<%  end%>
