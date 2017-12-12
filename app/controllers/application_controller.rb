@@ -24,7 +24,7 @@ class ApplicationController < Sinatra::Base
     redirect to('/posts')
   end
 
-  get 'posts/:id' do
+  get '/posts/:id' do
     @post = Post.find(:id)
 
     erb :show
