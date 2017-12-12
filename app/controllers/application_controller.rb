@@ -33,7 +33,7 @@ class ApplicationController < Sinatra::Base
   end
 
   patch '/posts/:id' do
-    
+
   end
 
 end
