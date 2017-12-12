@@ -12,7 +12,7 @@ class ApplicationController < Sinatra::Base
   end
 
   get '/posts/new' do
-
+    Post.new
     erb :new
   end
 end
