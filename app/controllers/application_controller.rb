@@ -32,7 +32,6 @@ class ApplicationController < Sinatra::Base
 
   get '/posts/:id/edit' do
     @post = Post.find(params[:id])
-    binding.pry
 
     erb :edit
   end
@@ -50,7 +49,7 @@ class ApplicationController < Sinatra::Base
  post '/posts/:id/delete' do
    @post = Post.find_by_id(params[:id])
    @post.delete
-   
+
    erb :deleted
  end
 
