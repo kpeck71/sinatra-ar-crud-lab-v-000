@@ -14,11 +14,11 @@ class ApplicationController < Sinatra::Base
   end
 
   get '/posts' do
-    Post.all
+    @post = Post.create(params[:name],params[:content])
   end
 
   post '/posts/new' do
-    @post = Post.create(params[:name],params[:content])
+
 
     erb :new
   end
