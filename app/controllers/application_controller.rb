@@ -13,12 +13,12 @@ class ApplicationController < Sinatra::Base
     erb :index
   end
 
-  post '/posts/new' do
+  get '/posts/new' do
 
     erb :new
   end
 
-  post 'posts/:id' do
+  get 'posts/:id' do
     @post = Post.find(:id)
 
     erb :show
