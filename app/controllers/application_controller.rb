@@ -13,6 +13,10 @@ class ApplicationController < Sinatra::Base
     erb :index
   end
 
+  get '/posts' do
+    Post.all
+  end
+
   post '/posts/new' do
     @post = Post.create(params[:name],params[:content])
 
