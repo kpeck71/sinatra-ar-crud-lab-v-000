@@ -20,6 +20,6 @@ class ApplicationController < Sinatra::Base
   end
 
   post 'posts/:id' do
-
+    current = @posts.find(:id)
   end
 end
