@@ -18,6 +18,13 @@ class ApplicationController < Sinatra::Base
     erb :new
   end
 
+  post '/posts' do
+    new_post = Post.create(params)
+    new_post.save
+
+    #redirect to('/posts')
+  end
+
   get 'posts/:id' do
     @post = Post.find(:id)
 
