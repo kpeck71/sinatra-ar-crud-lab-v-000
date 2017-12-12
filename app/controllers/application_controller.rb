@@ -15,6 +15,7 @@ class ApplicationController < Sinatra::Base
 
   get '/posts/new' do
     new_post = Post.create(params)
+    binding.pry
     new_post.save
 
     redirect to('/posts')
