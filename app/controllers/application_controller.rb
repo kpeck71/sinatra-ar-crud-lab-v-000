@@ -10,6 +10,7 @@ class ApplicationController < Sinatra::Base
   get '/' do
     Post.all
 
+    erb :index
   end
 
   post '/posts/new' do
