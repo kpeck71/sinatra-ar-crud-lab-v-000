@@ -19,7 +19,7 @@ class ApplicationController < Sinatra::Base
   end
 
   post 'posts/:id' do
-    @current = Post.find(:id)
+    @post = Post.find(:id)
 
     erb :show
   end
