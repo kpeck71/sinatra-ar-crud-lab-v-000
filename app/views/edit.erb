@@ -1,7 +1,6 @@
 <h2><%=@post.name%></h2>
 <h3><%=@post.content%></h3>
 
-
 <form action="/posts/<%= @post.id %>" method="POST">
     <input id="hidden" type="hidden" name="_method" value="patch">
     <p>Post <%= @post.id %> Name: <input type="text" value="<%=@post.name%>" name="name"></p>
