@@ -18,4 +18,8 @@ class ApplicationController < Sinatra::Base
 
     erb :new
   end
+
+  post 'posts/:id' do
+
+  end
 end
