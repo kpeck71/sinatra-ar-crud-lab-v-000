@@ -5,6 +5,8 @@
 <form action="/posts/<%= @post.id %>" method="POST">
     <label for"name">Edit Post <%=@post.id%> Name: </label>
     <input id="hidden" type="hidden" name="_method" value="patch">
+    Name<input type="text" value="<%=@post.name%>" name="name">
+    Content<input type="text" value="<%=@post.content%>" name="content">
 
     <label for"content">Edit Post <%=@post.id%> Content: </label>
     <input id="hidden" type="hidden" name="_method" value="patch">
