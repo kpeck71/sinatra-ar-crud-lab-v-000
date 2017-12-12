@@ -1,1 +1,3 @@
-<%=@posts.find(:id)%>
+<%current = @posts.find(:id)%>
+<%=current.title%>
+<%=current.content%>
